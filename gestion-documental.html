@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IMCA FORM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/form-styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href=css/documents-admin.css rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <!-- Page Content -->
+
+
+    <div class="header line-divider p-2 pt-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Start header -->
+            <div class="imca-form-header">                
+              <div class="row">
+                <div class="col-md-12 application-logo">
+                  <div class="imca-logo"><img src="images/logo.svg"></div>
+                  <h1 class="form-title">Gestión Documental</h1>
+                </div>
+              </div>
+            </div>
+          <!-- End header -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="documents-management">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="#" class="link-back float-right">
+                <i class="material-icons">keyboard_arrow_left</i>Regresar</a>
+            <h2 class="form-title primary-color">Modificación de Documento</h2 class="form-title primary-color">
+            <div class="document-box-white mb-4">
+              <div class="row p-4">
+                <div class="col-md-8">
+                    <p><strong>Datos Colaborador:</strong>José Matias del Valle Cruz </p>
+                    <div class="document-box mb-5">
+                      <div class="row">
+                        <div class="form-group col-md-7">
+                          <label for="test-field">Seleccione el tipo de documento:</label>
+                          <select class="form-control" id="test-field">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="float-right">* Haga clic sobre el documento que desea seleccionar</small>
+                    <h4 class="primary-color">Resultado</h4>
+                    <div class="table-responsive">
+                      <table class="table table-striped imca-table">
+                        <thead>
+                          <tr>
+                            <th width="25%">Secuencia</th>
+                            <th width="50%">Nombre</th>
+                            <th class="text-right" width="25%">Fecha Vigencia</th>
+                          </tr>
+                        </thead>
+                          <tr>
+                            <td>FM-01102</td>
+                            <td>Normas de protección ambiental en Santo Domingo.</td>
+                            <td class="text-right">10/12/2019</td>
+                          </tr>
+                          <tr>
+                            <td>DM-03305</td>
+                            <td>Reglas de regularización de procesos industriales en instituciones de gran escala.</td>
+                            <td class="text-right">10/12/2019</td>
+                          </tr>
+                          <tr>
+                            <td height="20">F-01104</td>
+                            <td><p>Normas de protección ambiental en Santo Domingo.</p>
+                              <p><strong>Docuemtos  referencias: </strong><br />
+                              Doc 01   |    Doc 02    |    Doc 03</p></td>
+                            <td class="text-right">10/12/2019</td>
+                          </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <h4 class="primary-color">Seleccionados</h4>
+                    <div class="selected-blocks">
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <p>Normas de protección ambiental en Santo Domingo.</p>
+                          <div class="validity-date">
+                            <strong>Vigencia:</strong> 10/12/2019
+                            <div class="remove-block"><i class="material-icons">close</i></div>
+                            <div class="edit-block">EDIT</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <p>Normas de protección ambiental en Santo Domingo.</p>
+                          <div class="validity-date">
+                            <strong>Vigencia:</strong> 10/12/2019
+                            <div class="remove-block"><i class="material-icons">close</i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-4">
+                        <div class="card-body">
+                          <p>Normas de protección ambiental en Santo Domingo.</p>
+                          <div class="validity-date">
+                            <strong>Vigencia:</strong> 10/12/2019
+                            <div class="remove-block"><i class="material-icons">close</i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

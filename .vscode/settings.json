@@ -1,0 +1,13 @@
+{
+    "git.confirmSync": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles/css"
+        }
+    ],
+    "explorer.confirmDragAndDrop": false
+}

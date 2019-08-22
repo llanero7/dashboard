@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IMCA FORM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/form-styles.css" rel="stylesheet">
+    <link href="css/documents-admin.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+
+  <body>
+   
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#documents-edit-modal-">
+        Modal Grande
+      </button>
+      <!-- Modal -->
+        <div class="modal documents-edit-modal fade" id="documents-edit-modal-" tabindex="-1" role="dialog" aria-labelledby="documents-edit-modal-Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="documents-edit-modal-Label">Editar Documento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body pb-2">
+                        <ul class="nav nav justify-content-center nav-pills imca-tabs mb-4" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                            <a class="nav-link active" id="option-1-tab" data-toggle="pill" href="#option-1" role="tab" aria-controls="option-1" aria-selected="true">Edición General</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="option-2-tab" data-toggle="pill" href="#option-2" role="tab" aria-controls="option-2" aria-selected="false">Agregar Referencias</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id="option-3-tab" data-toggle="pill" href="#option-3" role="tab" aria-controls="option-3" aria-selected="false">Agregar Brechas</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="option-1" role="tabpanel" aria-labelledby="option-1-tab">
+                                <div class="col-md-9 m-auto">
+                                    <div class="general-edition">
+                                        <form>
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <label for="inputDemo-1">Departamento:</label>
+                                                    <select id="inputDemo-1" class="form-control">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputDemo-1">Tipo de Documento:</label>
+                                                    <select id="inputDemo-1" class="form-control">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="suggestedName">Nombre Sugerido:</label>
+                                                    <input type="email" class="form-control" id="suggestedName">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlFile1">Documento:</label>
+                                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="option-2" role="tabpanel" aria-labelledby="option-2-tab">
+                                <div class="col-md-12 m-auto">                                    
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h5 class="primary-color">Documentos de Referencias</h5>
+                                            <div class="table-responsive">
+                                                <table class="table table imca-table thin-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre</th>
+                                                            <th class="text-right">Acción</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>ss</td>
+                                                        <td class="text-right"><a href="#"><i class="material-icons">delete</i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsasp;</td>
+                                                        <td class="text-right"><a href="#"><i class="material-icons">delete</i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nsbsp;</td>
+                                                        <td class="text-right"><a href="#"><i class="material-icons">delete</i></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div> 
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h5 class="primary-color">Referencias</h5>
+                                            <ul class="reference-list">
+                                                <li class="reference-item">
+                                                    <span>Documento 01</span>
+                                                    <i class="material-icons">highlight_off</i>
+                                                </li>
+                                                <li class="reference-item">
+                                                    <span>Documento 01</span>
+                                                    <i class="material-icons">highlight_off</i>
+                                                </li>
+                                                <li class="reference-item">
+                                                    <span>Documento 01</span>
+                                                    <i class="material-icons">highlight_off</i>
+                                                </li>
+                                                <li class="reference-item">
+                                                    <span>Documento 01</span>
+                                                    <i class="material-icons">highlight_off</i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="option-3" role="tabpanel" aria-labelledby="option-3-tab">
+                                <div class="col-md-12 m-auto">
+
+                                    <div class="form-row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="demo-5">Nombre</label>
+                                                <input type="email" class="form-control" id="demo-5">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="demo-6">Descripción</label>
+                                                <input type="email" class="form-control" id="demo-6">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <span class="btn btn-primary btn-single-icon mt-4"><i class="material-icons">add</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped imca-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre</th>
+                                                            <th>Descripción</th>
+                                                            <th class="text-right">Acción</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>ss</td>
+                                                        <td>rr</td>
+                                                        <td class="text-right"><a><i class="material-icons">delete</i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsasp;</td>
+                                                        <td>&nbssp;</td>
+                                                        <td class="text-right"><a><i class="material-icons">delete</i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nsbsp;</td>
+                                                        <td>&nsbsp;</td>
+                                                        <td class="text-right"><a><i class="material-icons">delete</i></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-right mr-4 mb-3">
+                        <button type="button" class="btn btn-primary"><i class="material-icons">check</i> Guardar Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
