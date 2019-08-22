@@ -809,4 +809,26 @@ button.close {
   width: 629px;
   margin: 0 auto;
 }
+
+.dashboard-sections .col-lg-6 {
+  margin-bottom: 20px;
+}
+
+.dashboard-link {
+  background: #00C8D3;
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  display: block;
+  color: #fff;
+  height: 100%;
+}
+
+.dashboard-link h3 {
+  color: #fff;
+  font-size: 18px;
+}
 /*# sourceMappingURL=documents-admin.css.map */
