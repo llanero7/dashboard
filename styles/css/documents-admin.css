@@ -426,6 +426,7 @@ h3.form-title {
   color: #8E8E8E;
   margin-top: 140px;
   line-height: 23px;
+  width: 100%;
 }
 
 .dropdown-menu {
@@ -682,13 +683,18 @@ h3.form-title {
 }
 
 .selected-blocks i.material-icons {
-  background: #7F7F7F;
+  background: #C92D40;
   border-radius: 50%;
   position: absolute;
   right: -12px;
   top: -13px;
   color: #fff;
   padding: 3px;
+}
+
+.selected-blocks i.material-icons:hover {
+  cursor: pointer;
+  background: #C31227;
 }
 
 .line-divider {
@@ -830,5 +836,24 @@ button.close {
 .dashboard-link h3 {
   color: #fff;
   font-size: 18px;
+}
+
+/*----------------- Documents Modification ------------------------------------- */
+.documents-modification-modal .modal-lg {
+  max-width: 1100px !important;
+}
+
+.documents-modification-modal .selected-blocks {
+  background: #ECF5F7;
+  border-radius: 10px;
+  border: 1px #BCD5DB solid;
+  padding: 19px 19px 0 19px;
+  border-radius: 7px;
+  overflow-y: auto;
+  height: 505px;
+}
+
+.documents-modification-modal .selected-blocks .remove-block {
+  background: #17C2CB;
 }
 /*# sourceMappingURL=documents-admin.css.map */
