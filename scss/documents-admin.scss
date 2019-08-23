@@ -773,7 +773,32 @@ button.close {
     .modal-lg {
         max-width: 1100px !important;
     }
-}  
+} 
+.segments-modal {
+    .modal-lg {
+        max-width: 1100px !important;
+    } 
+} 
+
+.added-segments {
+    .add-segment {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .segment {
+        background: #9B9B9B;
+        color: #ffffff;
+        margin-bottom: 8px;
+        padding: 11px;
+        text-align: center;
+        border-radius: 3px;
+        width: 100%;
+        border: none;
+        &.current {
+            background: #6A7A88;
+        }
+    }
+}
 
 .documents-modification-modal {
     .selected-blocks{
@@ -786,6 +811,59 @@ button.close {
         height: 505px;
         .remove-block {
             background: #17C2CB;
+        }
+    }
+}
+
+.segment-versions {
+    color: #000;
+    height: 400px; 
+    overflow-y: auto;
+    .segment-post {
+        font-size: 14px;
+        border-bottom: dashed 1px #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.side-toggle-btn {
+    right: 5px;
+}
+
+
+.editable-segments-wrap {
+    .col-md-6 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+        transition: all 0.3s ease;
+    }
+    .col-md-3.versioning-sidebar {
+        margin-right: 0 !important;
+        transition: all 0.3s ease;
+        opacity: 0;
+    }
+    .document-box {
+        .col-md-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;        
+        }
+    }
+    &.expanded {
+        overflow: hidden;
+        .col-md-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            transition: all 0.3s ease;
+        }
+        .col-md-3.versioning-sidebar {
+            margin-right: -290px !important;
+            transition: all 0.3s ease;
+            opacity: 1;
         }
     }
 }

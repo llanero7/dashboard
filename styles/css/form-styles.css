@@ -777,8 +777,9 @@ body .form-group select {
 body .form-group input.form-control[type="text"]:focus,
 body .form-group input.form-control[type="password"]:focus,
 body .form-group input.form-control[type="email"]:focus,
-body .form-group input.form-control[type="text"]:focus {
-    border-color: #18C8D2;
+body .form-group input.form-control[type="text"]:focus,
+body textarea:focus {
+    border-color: #18C8D2 !important;
     box-shadow: 0 3px 0 0 #18C8D2 !important;
 }
 
